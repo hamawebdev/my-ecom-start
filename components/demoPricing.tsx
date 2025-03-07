@@ -20,7 +20,7 @@ const demoPlans = [
     ],
     description: "Perfect for individual sellers and small businesses",
     buttonText: "Start Selling",
-    href: "/seller/sign-up",
+    href: "/signup",
     isPopular: false,
   },
   {
@@ -40,7 +40,7 @@ const demoPlans = [
     ],
     description: "Ideal for growing businesses and power sellers",
     buttonText: "Grow Your Business",
-    href: "/seller/sign-up",
+    href: "/signup",
     isPopular: true,
   },
   {
@@ -60,7 +60,7 @@ const demoPlans = [
     ],
     description: "For large-scale sellers and established brands",
     buttonText: "Contact Sales",
-    href: "/contact",
+    href: "/signup",
     isPopular: false,
   },
 ];

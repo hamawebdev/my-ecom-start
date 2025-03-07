@@ -3,6 +3,8 @@ import { HeroSection } from "@/components/hero-section-dark";
 import { FeaturesSectionWithHoverEffects } from "@/components/feature-section-with-hover-effects";
 import { DemoPricing } from "@/components/demoPricing";
 
+const title="Powerful Features to Grow Your Business"
+const description="Discover the tools and features that will help you build, manage and scale your online business. From inventory management to analytics, we've got everything you need to succeed."
 export default function SellerPage() {
   return (
     <>
@@ -27,8 +29,18 @@ export default function SellerPage() {
           darkLineColor: "#2a2a2a",
         }}
       />
-      <FeaturesSectionWithHoverEffects />
-      <DemoPricing />
+      <div className="container py-20">
+        <div className="text-center space-y-4 mb-12">
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+            {title}
+          </h2>
+          <p className="text-muted-foreground text-lg whitespace-pre-line">
+            {description}
+          </p>
+        </div>
+        <FeaturesSectionWithHoverEffects />
+      </div>
+        <DemoPricing />
     </>
   );
 }

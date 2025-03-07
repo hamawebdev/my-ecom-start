@@ -5,7 +5,7 @@ import { Hero } from "@/components/ui/animated-hero";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <header>
+      <header className="mx-4">
         <Navbar1 />
       </header>
 
