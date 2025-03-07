@@ -67,7 +67,7 @@ const demoPlans = [
 
  function DemoPricing() {
   return (
-    <div className="h-[800px] overflow-y-auto rounded-lg">
+    <div className="rounded-lg">
       <Pricing 
         plans={demoPlans}
         title="Start Selling on Our Marketplace"
