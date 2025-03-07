@@ -2,9 +2,9 @@
 import { HeroSection } from "@/components/hero-section-dark";
 import { FeaturesSectionWithHoverEffects } from "@/components/feature-section-with-hover-effects";
 import { DemoPricing } from "@/components/demoPricing";
-
-const title="Powerful Features to Grow Your Business"
-const description="Discover the tools and features that will help you build, manage and scale your online business. From inventory management to analytics, we've got everything you need to succeed."
+import {Footerdemo} from "@/components/ui/footer-section"
+const title="Why Work With Us? "
+const description=""
 export default function SellerPage() {
   return (
     <>
@@ -41,6 +41,7 @@ export default function SellerPage() {
         <FeaturesSectionWithHoverEffects />
       </div>
         <DemoPricing />
+        <Footerdemo />
     </>
   );
 }
