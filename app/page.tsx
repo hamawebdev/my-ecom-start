@@ -9,8 +9,8 @@ export default function Home() {
         <Navbar1 />
       </header>
 
-      <main className="flex-grow">
-        <section className="container mx-auto px-4 py-8">
+      <main className="flex-grow -mt-20">
+        <section className="container mx-auto flex items-center justify-center">
           <Hero />
         </section>
 
