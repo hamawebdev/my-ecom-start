@@ -62,9 +62,7 @@ function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Join our thriving marketplace where buying and selling is made simple. 
-              Whether you're looking to start your online business or find amazing deals, 
-              we've got you covered with powerful tools and a seamless experience.
+              Join our thriving marketplace where buying and selling is made simple.
             </p>
           </div>
           <div className="flex flex-row gap-3">
