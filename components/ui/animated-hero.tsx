@@ -26,7 +26,7 @@ function Hero() {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
+        <div className="flex gap-8 py-10 lg:py-20 items-center justify-center flex-col">
           <div>
             <Button variant="secondary" size="sm" className="gap-4">
               Join thousands of happy sellers <MoveRight className="w-4 h-4" />
