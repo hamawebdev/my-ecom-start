@@ -27,7 +27,7 @@ export default function SignupPage() {
           alt="Shopping bags and modern retail concept"
           fill
           priority
-          className="object-cover dark:brightness-[0.2] dark:grayscale"
+          className="object-cover dark:brightness-[0.7]"
           sizes="(min-width: 1024px) 50vw, 0vw"
         />
       </div>
