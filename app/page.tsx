@@ -8,9 +8,7 @@ export default function Home() {
         <Navbar1 />
       
 
-      {/* <div className="-my-20"> */}
         <Hero />
-      {/* </div> */}
           
        
 
