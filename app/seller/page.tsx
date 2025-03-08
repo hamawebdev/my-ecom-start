@@ -24,8 +24,8 @@ export default function SellerPage() {
         ctaText="Start Selling"
         ctaHref="/signup"
         bottomImage={{
-          light: "images/app-light.png",
-          dark: "images/app-dark.png",
+          light: "/images/app-light.png",
+          dark: "/images/app-dark.png",
         }}
         gridOptions={{
           angle: 65,
