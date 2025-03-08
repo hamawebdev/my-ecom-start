@@ -1,4 +1,6 @@
 import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 import {
   Accordion,
@@ -145,10 +147,10 @@ const Navbar1 = ({
         {/* Desktop Menu */}
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-8">
-            <a href={logo.url} className="flex items-center gap-3">
-              <img src={logo.src} className="w-8" alt={logo.alt} />
+            <Link href={logo.url} className="flex items-center gap-3">
+              <Image src={logo.src} width={32} height={32} className="w-8" alt={logo.alt} />
               <span className="text-lg font-semibold">{logo.title}</span>
-            </a>
+            </Link>
             <div className="flex items-center">
               <NavigationMenu className="ml-1">
                 <NavigationMenuList>
@@ -159,20 +161,20 @@ const Navbar1 = ({
           </div>
           <div className="flex gap-3">
             <Button asChild variant="outline" size="sm">
-              <a href={auth.login.url}>{auth.login.text}</a>
+              <Link href={auth.login.url}>{auth.login.text}</Link>
             </Button>
             <Button asChild size="sm">
-              <a href={auth.signup.url}>{auth.signup.text}</a>
+              <Link href={auth.signup.url}>{auth.signup.text}</Link>
             </Button>
           </div>
         </nav>
         {/* Mobile Menu */}
         <div className="block lg:hidden">
           <div className="flex items-center justify-between py-1">
-            <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="w-8" alt={logo.alt} />
+            <Link href={logo.url} className="flex items-center gap-2">
+              <Image src={logo.src} width={32} height={32} className="w-8" alt={logo.alt} />
               <span className="text-lg font-semibold">{logo.title}</span>
-            </a>
+            </Link>
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon">
@@ -182,12 +184,10 @@ const Navbar1 = ({
               <SheetContent className="overflow-y-auto">
                 <SheetHeader>
                   <SheetTitle>
-                    <a href={logo.url} className="flex items-center gap-2">
-                      <img src={logo.src} className="w-8" alt={logo.alt} />
-                      <span className="text-lg font-semibold">
-                        {logo.title}
-                      </span>
-                    </a>
+                    <Link href={logo.url} className="flex items-center gap-2">
+                      <Image src={logo.src} width={32} height={32} className="w-8" alt={logo.alt} />
+                      <span className="text-lg font-semibold">{logo.title}</span>
+                    </Link>
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-6 p-4">
@@ -201,10 +201,10 @@ const Navbar1 = ({
 
                   <div className="flex flex-col gap-3">
                     <Button asChild variant="outline">
-                      <a href={auth.login.url}>{auth.login.text}</a>
+                      <Link href={auth.login.url}>{auth.login.text}</Link>
                     </Button>
                     <Button asChild>
-                      <a href={auth.signup.url}>{auth.signup.text}</a>
+                      <Link href={auth.signup.url}>{auth.signup.text}</Link>
                     </Button>
                   </div>
                 </div>
@@ -234,13 +234,13 @@ const renderMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <a
+    <Link
       key={item.title}
       className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-accent-foreground"
       href={item.url}
     >
       {item.title}
-    </a>
+    </Link>
   );
 };
 
@@ -261,15 +261,15 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <a key={item.title} href={item.url} className="text-md font-semibold">
+    <Link key={item.title} href={item.url} className="text-md font-semibold">
       {item.title}
-    </a>
+    </Link>
   );
 };
 
 const SubMenuLink = ({ item }: { item: MenuItem }) => {
   return (
-    <a
+    <Link
       className="flex flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-muted hover:text-accent-foreground"
       href={item.url}
     >
@@ -282,7 +282,7 @@ const SubMenuLink = ({ item }: { item: MenuItem }) => {
           </p>
         )}
       </div>
-    </a>
+    </Link>
   );
 };
 

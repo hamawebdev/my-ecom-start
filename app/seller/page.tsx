@@ -3,10 +3,10 @@ import { HeroSection } from "@/components/hero-section-dark";
 import { FeaturesSectionWithHoverEffects } from "@/components/feature-section-with-hover-effects";
 import { DemoPricing } from "@/components/demoPricing";
 import {Footerdemo} from "@/components/ui/footer-section"
-import { DemoBackgroundPaths } from "@/components/demoHeroSeller";
 import { TestimonialsDemo} from "@/components/demoTest"
 
-
+// Remove or comment out this unused import
+// import { DemoBackgroundPaths } from "@/components/demoHeroSeller";
 
 const title="Why Work With Us? "
 const description=""

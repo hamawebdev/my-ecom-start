@@ -1,4 +1,6 @@
 import * as React from "react"
+import Image from "next/image"
+import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { ChevronRight } from "lucide-react"
 
@@ -99,26 +101,32 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
               <span className="relative inline-block overflow-hidden rounded-full p-[1.5px]">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#262626_0%,#525252_50%,#262626_100%)] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#525252_50%,#ffffff_100%)]" />
                 <div className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white dark:bg-black text-xs font-medium backdrop-blur-3xl">
-                  <a
+                  <Link
                     href={ctaHref}
                     className="inline-flex rounded-full text-center group items-center w-full justify-center bg-gradient-to-tr from-zinc-100 via-zinc-200/30 to-transparent dark:from-zinc-800 dark:via-zinc-700/20 text-zinc-900 dark:text-white border-zinc-200 dark:border-zinc-800 border-[1px] hover:bg-gradient-to-tr hover:from-zinc-200 hover:via-zinc-300/40 hover:to-transparent dark:hover:from-zinc-700 dark:hover:via-zinc-600/30 transition-all sm:w-auto py-4 px-10"
                   >
                     {ctaText}
-                  </a>
+                  </Link>
                 </div>
               </span>
             </div>
             {bottomImage && (
               <div className="mt-32 mx-10 relative z-10">
-                <img
+                <Image
                   src={bottomImage.light}
                   className="w-full shadow-lg rounded-lg border border-gray-200 dark:hidden"
                   alt="Dashboard preview"
+                  width={1200}
+                  height={675}
+                  priority
                 />
-                <img
+                <Image
                   src={bottomImage.dark}
                   className="hidden w-full shadow-lg rounded-lg border border-gray-800 dark:block"
                   alt="Dashboard preview"
+                  width={1200}
+                  height={675}
+                  priority
                 />
               </div>
             )}
