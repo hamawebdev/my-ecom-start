@@ -71,7 +71,7 @@ export function Pricing({
   };
 
   return (
-    <div className={cn("container py-20", className)}>  // Update this line
+    <div className={cn("container py-20", className)} /* Update this line */>
       <div className="text-center space-y-4 mb-12">
         <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
           {title}

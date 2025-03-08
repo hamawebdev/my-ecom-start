@@ -13,6 +13,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { Facebook, Instagram, Linkedin, Moon, Send, Sun, Twitter } from "lucide-react"
+import Link from "next/link"
 
 function Footerdemo() {
   const [isDarkMode, setIsDarkMode] = React.useState(true)
@@ -55,9 +56,9 @@ function Footerdemo() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
             <nav className="space-y-2 text-sm">
-              <a href="/" className="block transition-colors hover:text-primary">
+              <Link href="/" className="block transition-colors hover:text-primary">
                 Home
-              </a>
+              </Link>
               <a href="#" className="block transition-colors hover:text-primary">
                 About Us
               </a>
