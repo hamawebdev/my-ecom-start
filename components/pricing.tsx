@@ -25,9 +25,20 @@ interface PricingPlan {
 }
 
 interface PricingProps {
-  plans: PricingPlan[];
-  title?: string;
-  description?: string;
+  plans: {
+    name: string;
+    price: string;
+    yearlyPrice: string;
+    period: string;
+    features: string[];
+    description: string;
+    buttonText: string;
+    href: string;
+    isPopular: boolean;
+  }[];
+  title: string;
+  description: string;
+  className?: string;  // Add this line to accept className prop
 }
 
 export function Pricing({
