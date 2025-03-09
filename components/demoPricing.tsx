@@ -68,12 +68,11 @@ const demoPlans = [
  function DemoPricing() {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="rounded-lg overflow-hidden">
+      <div className="rounded-lg overflow-hidden space-y-8 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
         <Pricing 
           plans={demoPlans}
           title="Start Selling on Our Marketplace"
           description="Choose the plan that fits your business needs\nAll plans include secure payments, buyer protection, and access to millions of potential customers."
-          className="space-y-8 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0"
         />
       </div>
     </div>
