@@ -13,7 +13,7 @@ interface HeroAction {
   text: string;
   href: string;
   icon?: React.ReactNode;
-  variant?: "default" | "glow";
+  variant?: "default" | "link" | "destructive" | "outline" | "secondary" | "ghost";
 }
 
 interface HeroProps {
@@ -79,7 +79,12 @@ export function HeroSection({
           <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
             <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
               {actions.map((action, index) => (
-                <Button key={index} variant={action.variant} size="lg" asChild>
+                <Button 
+                  key={index} 
+                  variant={action.variant || "default"} 
+                  size="lg" 
+                  asChild
+                >
                   <a href={action.href} className="flex items-center gap-2">
                     {action.icon}
                     {action.text}
