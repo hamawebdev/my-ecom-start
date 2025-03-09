@@ -28,14 +28,12 @@ interface PricingProps {
   plans: PricingPlan[];
   title?: string;
   description?: string;
-  className?: string;  // Add this line
 }
 
 export function Pricing({
   plans,
   title = "Simple, Transparent Pricing",
-  description = "Choose the plan that works for you, All plans include access to our platform, lead generation tools, and dedicated support.",
-  className,  // Add this parameter
+  description = "Choose the plan that works for you\nAll plans include access to our platform, lead generation tools, and dedicated support.",
 }: PricingProps) {
   const [isMonthly, setIsMonthly] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -71,7 +69,7 @@ export function Pricing({
   };
 
   return (
-    <div className={cn("container py-20", className)} /* Update this line */>
+    <div className="container py-20">
       <div className="text-center space-y-4 mb-12">
         <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
           {title}
